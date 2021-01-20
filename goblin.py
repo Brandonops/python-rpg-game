@@ -1,15 +1,12 @@
 from character import Character
 class Goblin(Character):
-    def __init__(self, health = 6, power = 2):
+    name = "Goblin"
+    def __init__(self, health = 60, power = 2):
         super().__init__(health, power)
+        self.winphrase = "You are dead."
 
-    def attack(self, hero):
-        # Goblin attacks hero
-        hero.health -= self.power
-        print("The goblin does %d damage to you." % self.power)
-        if hero.health <= 0:
-            print("You are dead.")
-        
+
+
 
 
 
